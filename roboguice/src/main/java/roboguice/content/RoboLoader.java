@@ -3,7 +3,7 @@ package roboguice.content;
 import roboguice.RoboGuice;
 
 import android.content.Context;
-import android.support.v4.content.Loader;
+import android.content.Loader;
 
 /**
  * Provides injection to loaders.

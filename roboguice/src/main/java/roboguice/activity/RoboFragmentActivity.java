@@ -30,7 +30,6 @@ import roboguice.util.RoboContext;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 
 import com.google.inject.Inject;
 import com.google.inject.Key;
@@ -38,7 +37,7 @@ import com.google.inject.Key;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RoboFragmentActivity extends FragmentActivity implements RoboContext {
+public class RoboFragmentActivity extends Activity implements RoboContext {
     protected EventManager eventManager;
     protected HashMap<Key<?>,Object> scopedObjects = new HashMap<Key<?>, Object>();
 

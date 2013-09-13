@@ -3,8 +3,8 @@ package roboguice.inject;
 import roboguice.inject.ViewListener.ViewMembersInjector;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.content.Context;
-import android.support.v4.app.Fragment;
 
 import com.google.inject.*;
 import com.google.inject.spi.TypeConverterBinding;

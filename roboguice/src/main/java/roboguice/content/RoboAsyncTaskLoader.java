@@ -2,8 +2,8 @@ package roboguice.content;
 
 import roboguice.RoboGuice;
 
+import android.content.AsyncTaskLoader;
 import android.content.Context;
-import android.support.v4.content.AsyncTaskLoader;
 
 /**
  * Provides injection to async task loaders.
