@@ -1,11 +1,11 @@
 package roboguice.fragment;
 
+import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,8 +27,8 @@ import static org.junit.Assert.assertThat;
 public class FragmentInjectionTest {
 
     // http://stackoverflow.com/questions/11333354/how-can-i-test-fragments-with-robolectric
-    protected static void startFragment( FragmentActivity activity, Fragment fragment ) {
-        final FragmentManager fragmentManager = activity.getSupportFragmentManager();
+    protected static void startFragment( Activity activity, Fragment fragment ) {
+        final FragmentManager fragmentManager = activity.getFragmentManager();
         final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(fragment, null);
         fragmentTransaction.commit();
